@@ -2,9 +2,11 @@ import math
 import random
 
 def distance(a, b):
+    ### Get the Euclidean distance between the two nodes ###
     return math.sqrt((a.x_coord - b.x_coord)**2 + (a.y_coord - b.y_coord)**2)
 
 def alive(nodes):
+    ### Check whether the node is alive or not ###
     return [n for n in nodes if n.energy > 0]
 
 def remove_dead(nodes):
